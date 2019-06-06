@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Total Trivial Trivia</title>
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- JQuery CDN -->
-    <script   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-          integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font fam -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700&display=swap" rel="stylesheet">
+    <Link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+
 </head>
 
 <body style="height: 100%;">
@@ -22,14 +22,28 @@
             <div class="jumbotron text-center">
                 <h1 class="display-4" id="header">Total Greek Mythology Trivia</h1>
             </div>
-
-            <div class="row justify-content-center" id="qabox">
-                <button type="button" class="btn btn-primary btn-lg" id="start"
-                    style="border-color: #e9ecef;background-color: black; color:#e9ecef">Start</button>
+        
+            <div id="qabox">
+                <button type="button" class="btn btn-primary btn-lg"
+                style="border-color: #e9ecef;background-color: black; color:#e9ecef" 
+                id="start">Start</button>
+                
+            <div id= "timeleft" style="color: black; background-color:#e9ecef"></div>
+	        <div id= "questionblock" style="color: #e9ecef; background-color:black"></div>
+            <div id= "answerblock" style="color: #e9ecef; background-color:black"></div>
+                
+                <button type="button" class="btn btn-primary btn-lg"
+                style="border-color: #e9ecef;background-color: black; color:#e9ecef" 
+                id="reset">Play Again?</button>
             </div>
         </div>
+    </div>
 
     </div>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
 </body>
 
